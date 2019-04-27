@@ -1,0 +1,12 @@
+/build/*
+
+xcuserdata
+project.xcworkspace
+*.xccheckout
+*.xcscmblueprint
+
+*~
+*.DS_Store
+*.swp
+*.out
+*.orig

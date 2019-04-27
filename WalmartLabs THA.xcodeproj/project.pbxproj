@@ -7,12 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		20273E252274F0CB0001A884 /* WLProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20273E242274F0CB0001A884 /* WLProduct.swift */; };
+		20273E272274F4DD0001A884 /* WLNetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20273E262274F4DD0001A884 /* WLNetworkingManager.swift */; };
+		20273E2A2274F5440001A884 /* WLProductParsingTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20273E292274F5440001A884 /* WLProductParsingTest.swift */; };
+		20273E2C2274F7D90001A884 /* WLProductListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20273E2B2274F7D90001A884 /* WLProductListViewModel.swift */; };
+		20273E2F2274FDAA0001A884 /* WLJSONLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20273E2E2274FDAA0001A884 /* WLJSONLoader.swift */; };
+		20273E312275047D0001A884 /* WLProductSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20273E302275047D0001A884 /* WLProductSearchViewModel.swift */; };
+		20273E33227506110001A884 /* WLExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20273E32227506110001A884 /* WLExtensions.swift */; };
+		20273E36227507F00001A884 /* WLProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20273E34227507F00001A884 /* WLProductTableViewCell.swift */; };
+		20273E37227507F00001A884 /* WLProductTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20273E35227507F00001A884 /* WLProductTableViewCell.xib */; };
 		20D2CE652274ED1700CCCD17 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D2CE642274ED1700CCCD17 /* AppDelegate.swift */; };
-		20D2CE672274ED1700CCCD17 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D2CE662274ED1700CCCD17 /* ViewController.swift */; };
+		20D2CE672274ED1700CCCD17 /* WLProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D2CE662274ED1700CCCD17 /* WLProductListViewController.swift */; };
 		20D2CE6A2274ED1700CCCD17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20D2CE682274ED1700CCCD17 /* Main.storyboard */; };
 		20D2CE6C2274ED1900CCCD17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20D2CE6B2274ED1900CCCD17 /* Assets.xcassets */; };
 		20D2CE6F2274ED1900CCCD17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20D2CE6D2274ED1900CCCD17 /* LaunchScreen.storyboard */; };
 		20D2CE7A2274ED1900CCCD17 /* WalmartLabs_THATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D2CE792274ED1900CCCD17 /* WalmartLabs_THATests.swift */; };
+		8667F0CC91281D5C22CB2024 /* Pods_WalmartLabs_THATests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFC2633E8470C2045390863F /* Pods_WalmartLabs_THATests.framework */; };
+		F795BCB2A9B3A9E1BBE360FE /* Pods_WalmartLabs_THA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31644FD1DF407C61F7B48473 /* Pods_WalmartLabs_THA.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,9 +37,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		031C529F936E31D24637B139 /* Pods-WalmartLabs THATests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WalmartLabs THATests.debug.xcconfig"; path = "Target Support Files/Pods-WalmartLabs THATests/Pods-WalmartLabs THATests.debug.xcconfig"; sourceTree = "<group>"; };
+		20273E242274F0CB0001A884 /* WLProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLProduct.swift; sourceTree = "<group>"; };
+		20273E262274F4DD0001A884 /* WLNetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLNetworkingManager.swift; sourceTree = "<group>"; };
+		20273E292274F5440001A884 /* WLProductParsingTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLProductParsingTest.swift; sourceTree = "<group>"; };
+		20273E2B2274F7D90001A884 /* WLProductListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLProductListViewModel.swift; sourceTree = "<group>"; };
+		20273E2E2274FDAA0001A884 /* WLJSONLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLJSONLoader.swift; sourceTree = "<group>"; };
+		20273E302275047D0001A884 /* WLProductSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLProductSearchViewModel.swift; sourceTree = "<group>"; };
+		20273E32227506110001A884 /* WLExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLExtensions.swift; sourceTree = "<group>"; };
+		20273E34227507F00001A884 /* WLProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLProductTableViewCell.swift; sourceTree = "<group>"; };
+		20273E35227507F00001A884 /* WLProductTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WLProductTableViewCell.xib; sourceTree = "<group>"; };
 		20D2CE612274ED1700CCCD17 /* WalmartLabs THA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WalmartLabs THA.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		20D2CE642274ED1700CCCD17 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		20D2CE662274ED1700CCCD17 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		20D2CE662274ED1700CCCD17 /* WLProductListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLProductListViewController.swift; sourceTree = "<group>"; };
 		20D2CE692274ED1700CCCD17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		20D2CE6B2274ED1900CCCD17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		20D2CE6E2274ED1900CCCD17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +57,11 @@
 		20D2CE752274ED1900CCCD17 /* WalmartLabs THATests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WalmartLabs THATests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		20D2CE792274ED1900CCCD17 /* WalmartLabs_THATests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalmartLabs_THATests.swift; sourceTree = "<group>"; };
 		20D2CE7B2274ED1900CCCD17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		31644FD1DF407C61F7B48473 /* Pods_WalmartLabs_THA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WalmartLabs_THA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		53A612EB9280813E4BD7188B /* Pods-WalmartLabs THA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WalmartLabs THA.debug.xcconfig"; path = "Target Support Files/Pods-WalmartLabs THA/Pods-WalmartLabs THA.debug.xcconfig"; sourceTree = "<group>"; };
+		7762D42FF6B2D725FE0AD528 /* Pods-WalmartLabs THA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WalmartLabs THA.release.xcconfig"; path = "Target Support Files/Pods-WalmartLabs THA/Pods-WalmartLabs THA.release.xcconfig"; sourceTree = "<group>"; };
+		B74A0D8C50B6BC61DFEEABE6 /* Pods-WalmartLabs THATests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WalmartLabs THATests.release.xcconfig"; path = "Target Support Files/Pods-WalmartLabs THATests/Pods-WalmartLabs THATests.release.xcconfig"; sourceTree = "<group>"; };
+		EFC2633E8470C2045390863F /* Pods_WalmartLabs_THATests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WalmartLabs_THATests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F795BCB2A9B3A9E1BBE360FE /* Pods_WalmartLabs_THA.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,18 +77,80 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8667F0CC91281D5C22CB2024 /* Pods_WalmartLabs_THATests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		20273E1F2274EFEB0001A884 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				20273E242274F0CB0001A884 /* WLProduct.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		20273E202274EFEF0001A884 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				20273E262274F4DD0001A884 /* WLNetworkingManager.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		20273E212274EFF60001A884 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				20273E32227506110001A884 /* WLExtensions.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		20273E222274EFFC0001A884 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				20D2CE662274ED1700CCCD17 /* WLProductListViewController.swift */,
+				20273E34227507F00001A884 /* WLProductTableViewCell.swift */,
+				20273E35227507F00001A884 /* WLProductTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		20273E232274F0020001A884 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				20273E2B2274F7D90001A884 /* WLProductListViewModel.swift */,
+				20273E302275047D0001A884 /* WLProductSearchViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		20273E282274F52F0001A884 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				20273E292274F5440001A884 /* WLProductParsingTest.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		20273E2D2274FD910001A884 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				20273E2E2274FDAA0001A884 /* WLJSONLoader.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		20D2CE582274ED1700CCCD17 = {
 			isa = PBXGroup;
 			children = (
 				20D2CE632274ED1700CCCD17 /* WalmartLabs THA */,
 				20D2CE782274ED1900CCCD17 /* WalmartLabs THATests */,
 				20D2CE622274ED1700CCCD17 /* Products */,
+				EC8D9A9CD229135064742A74 /* Pods */,
+				D756180B8E1A61E90B116A24 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,8 +166,12 @@
 		20D2CE632274ED1700CCCD17 /* WalmartLabs THA */ = {
 			isa = PBXGroup;
 			children = (
+				20273E1F2274EFEB0001A884 /* Model */,
+				20273E222274EFFC0001A884 /* View */,
+				20273E232274F0020001A884 /* ViewModel */,
+				20273E212274EFF60001A884 /* Utils */,
+				20273E202274EFEF0001A884 /* Networking */,
 				20D2CE642274ED1700CCCD17 /* AppDelegate.swift */,
-				20D2CE662274ED1700CCCD17 /* ViewController.swift */,
 				20D2CE682274ED1700CCCD17 /* Main.storyboard */,
 				20D2CE6B2274ED1900CCCD17 /* Assets.xcassets */,
 				20D2CE6D2274ED1900CCCD17 /* LaunchScreen.storyboard */,
@@ -90,10 +183,32 @@
 		20D2CE782274ED1900CCCD17 /* WalmartLabs THATests */ = {
 			isa = PBXGroup;
 			children = (
+				20273E2D2274FD910001A884 /* Utils */,
+				20273E282274F52F0001A884 /* Model */,
 				20D2CE792274ED1900CCCD17 /* WalmartLabs_THATests.swift */,
 				20D2CE7B2274ED1900CCCD17 /* Info.plist */,
 			);
 			path = "WalmartLabs THATests";
+			sourceTree = "<group>";
+		};
+		D756180B8E1A61E90B116A24 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				31644FD1DF407C61F7B48473 /* Pods_WalmartLabs_THA.framework */,
+				EFC2633E8470C2045390863F /* Pods_WalmartLabs_THATests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EC8D9A9CD229135064742A74 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				53A612EB9280813E4BD7188B /* Pods-WalmartLabs THA.debug.xcconfig */,
+				7762D42FF6B2D725FE0AD528 /* Pods-WalmartLabs THA.release.xcconfig */,
+				031C529F936E31D24637B139 /* Pods-WalmartLabs THATests.debug.xcconfig */,
+				B74A0D8C50B6BC61DFEEABE6 /* Pods-WalmartLabs THATests.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -103,9 +218,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 20D2CE7E2274ED1900CCCD17 /* Build configuration list for PBXNativeTarget "WalmartLabs THA" */;
 			buildPhases = (
+				A5767F9599C627B1495853DC /* [CP] Check Pods Manifest.lock */,
 				20D2CE5D2274ED1700CCCD17 /* Sources */,
 				20D2CE5E2274ED1700CCCD17 /* Frameworks */,
 				20D2CE5F2274ED1700CCCD17 /* Resources */,
+				075D41BC4F2F2E6351F477EE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -120,6 +237,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 20D2CE812274ED1900CCCD17 /* Build configuration list for PBXNativeTarget "WalmartLabs THATests" */;
 			buildPhases = (
+				C1E75FCFFB27BB3E6F8FF7F2 /* [CP] Check Pods Manifest.lock */,
 				20D2CE712274ED1900CCCD17 /* Sources */,
 				20D2CE722274ED1900CCCD17 /* Frameworks */,
 				20D2CE732274ED1900CCCD17 /* Resources */,
@@ -179,6 +297,7 @@
 			files = (
 				20D2CE6F2274ED1900CCCD17 /* LaunchScreen.storyboard in Resources */,
 				20D2CE6C2274ED1900CCCD17 /* Assets.xcassets in Resources */,
+				20273E37227507F00001A884 /* WLProductTableViewCell.xib in Resources */,
 				20D2CE6A2274ED1700CCCD17 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -192,13 +311,92 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		075D41BC4F2F2E6351F477EE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WalmartLabs THA/Pods-WalmartLabs THA-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WalmartLabs THA/Pods-WalmartLabs THA-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A5767F9599C627B1495853DC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WalmartLabs THA-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C1E75FCFFB27BB3E6F8FF7F2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WalmartLabs THATests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		20D2CE5D2274ED1700CCCD17 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20D2CE672274ED1700CCCD17 /* ViewController.swift in Sources */,
+				20D2CE672274ED1700CCCD17 /* WLProductListViewController.swift in Sources */,
+				20273E312275047D0001A884 /* WLProductSearchViewModel.swift in Sources */,
+				20273E272274F4DD0001A884 /* WLNetworkingManager.swift in Sources */,
+				20273E33227506110001A884 /* WLExtensions.swift in Sources */,
 				20D2CE652274ED1700CCCD17 /* AppDelegate.swift in Sources */,
+				20273E252274F0CB0001A884 /* WLProduct.swift in Sources */,
+				20273E36227507F00001A884 /* WLProductTableViewCell.swift in Sources */,
+				20273E2C2274F7D90001A884 /* WLProductListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,7 +404,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20273E2F2274FDAA0001A884 /* WLJSONLoader.swift in Sources */,
 				20D2CE7A2274ED1900CCCD17 /* WalmartLabs_THATests.swift in Sources */,
+				20273E2A2274F5440001A884 /* WLProductParsingTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +558,7 @@
 		};
 		20D2CE7F2274ED1900CCCD17 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53A612EB9280813E4BD7188B /* Pods-WalmartLabs THA.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -376,6 +577,7 @@
 		};
 		20D2CE802274ED1900CCCD17 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7762D42FF6B2D725FE0AD528 /* Pods-WalmartLabs THA.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -394,6 +596,7 @@
 		};
 		20D2CE822274ED1900CCCD17 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 031C529F936E31D24637B139 /* Pods-WalmartLabs THATests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -415,6 +618,7 @@
 		};
 		20D2CE832274ED1900CCCD17 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B74A0D8C50B6BC61DFEEABE6 /* Pods-WalmartLabs THATests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

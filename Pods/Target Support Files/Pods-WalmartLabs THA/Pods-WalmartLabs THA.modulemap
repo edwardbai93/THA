@@ -1,0 +1,6 @@
+framework module Pods_WalmartLabs_THA {
+  umbrella header "Pods-WalmartLabs THA-umbrella.h"
+
+  export *
+  module * { export * }
+}
