@@ -11,6 +11,8 @@ import Foundation
 class WLProductListViewModel: NSObject {
     fileprivate var products = [WLProduct]()
     
+    typealias ItemType = WLProduct
+    
     let searchViewModel = WLProductSearchViewModel(provider: WLNetworkingManager())
     
     func fetchNextPage(refresh: Bool = false, completion: @escaping (Error?) -> ()) {
@@ -39,7 +41,7 @@ class WLProductListViewModel: NSObject {
 }
 
 extension WLProductListViewModel: ListDataSourceProtocol {
-    typealias ItemType = WLProduct
+//    typealias ItemType = WLProduct
     
     var numberOfItems: Int {
         return products.count
@@ -60,3 +62,30 @@ protocol ListDataSourceProtocol {
     func item(at indexPath: IndexPath) -> ItemType?
 }
 
+protocol ListDataNavigation {
+    associatedtype ItemType
+    
+    func index(for item: ItemType) -> Int?
+    func previousItem(for item: ItemType) -> ItemType?
+    func nextItem(for item: ItemType) -> ItemType?
+}
+
+extension WLProductListViewModel: ListDataNavigation {
+    func previousItem(for item: WLProduct) -> WLProduct? {
+        if let currIdx = index(for: item), currIdx - 1 >= 0 {
+            return products[currIdx - 1]
+        }
+        return nil
+    }
+    
+    func nextItem(for item: WLProduct) -> WLProduct? {
+        if let currIdx = index(for: item), currIdx + 1 < products.count {
+            return products[currIdx + 1]
+        }
+        return nil
+    }
+    
+    func index(for product: WLProduct) -> Int? {
+        return products.firstIndex { $0 === product }
+    }
+}

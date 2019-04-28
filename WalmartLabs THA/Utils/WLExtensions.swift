@@ -28,7 +28,7 @@ extension UILabel {
 }
 
 extension UITableView {
-    func registerCell<T: UITableViewCell>(_ type: T.Type, bundle: Bundle? = nil) {
+    func registerCellFromNib<T: UITableViewCell>(_ type: T.Type, bundle: Bundle? = nil) {
         let identifier = String(describing: T.self)
         let nib = UINib(nibName: identifier, bundle: bundle)
         register(nib, forCellReuseIdentifier: identifier)

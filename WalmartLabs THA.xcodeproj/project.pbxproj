@@ -17,6 +17,8 @@
 		20273E36227507F00001A884 /* WLProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20273E34227507F00001A884 /* WLProductTableViewCell.swift */; };
 		20273E37227507F00001A884 /* WLProductTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20273E35227507F00001A884 /* WLProductTableViewCell.xib */; };
 		20273E3922752B580001A884 /* testProduct.json in Resources */ = {isa = PBXBuildFile; fileRef = 20273E3822752B580001A884 /* testProduct.json */; };
+		20273E3D227533E40001A884 /* WLProductDetailContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20273E3C227533E40001A884 /* WLProductDetailContainerViewController.swift */; };
+		20273E3F227624470001A884 /* WLProductDetailPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20273E3E227624470001A884 /* WLProductDetailPageViewController.swift */; };
 		20D2CE652274ED1700CCCD17 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D2CE642274ED1700CCCD17 /* AppDelegate.swift */; };
 		20D2CE672274ED1700CCCD17 /* WLProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D2CE662274ED1700CCCD17 /* WLProductListViewController.swift */; };
 		20D2CE6A2274ED1700CCCD17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20D2CE682274ED1700CCCD17 /* Main.storyboard */; };
@@ -49,6 +51,8 @@
 		20273E34227507F00001A884 /* WLProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLProductTableViewCell.swift; sourceTree = "<group>"; };
 		20273E35227507F00001A884 /* WLProductTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WLProductTableViewCell.xib; sourceTree = "<group>"; };
 		20273E3822752B580001A884 /* testProduct.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = testProduct.json; sourceTree = "<group>"; };
+		20273E3C227533E40001A884 /* WLProductDetailContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLProductDetailContainerViewController.swift; sourceTree = "<group>"; };
+		20273E3E227624470001A884 /* WLProductDetailPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLProductDetailPageViewController.swift; sourceTree = "<group>"; };
 		20D2CE612274ED1700CCCD17 /* WalmartLabs THA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WalmartLabs THA.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		20D2CE642274ED1700CCCD17 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20D2CE662274ED1700CCCD17 /* WLProductListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLProductListViewController.swift; sourceTree = "<group>"; };
@@ -113,9 +117,8 @@
 		20273E222274EFFC0001A884 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				20D2CE662274ED1700CCCD17 /* WLProductListViewController.swift */,
-				20273E34227507F00001A884 /* WLProductTableViewCell.swift */,
-				20273E35227507F00001A884 /* WLProductTableViewCell.xib */,
+				20273E3B227533CD0001A884 /* Detail View */,
+				20273E3A227533BD0001A884 /* List View */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -144,6 +147,25 @@
 				20273E2E2274FDAA0001A884 /* WLJSONLoader.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		20273E3A227533BD0001A884 /* List View */ = {
+			isa = PBXGroup;
+			children = (
+				20D2CE662274ED1700CCCD17 /* WLProductListViewController.swift */,
+				20273E34227507F00001A884 /* WLProductTableViewCell.swift */,
+				20273E35227507F00001A884 /* WLProductTableViewCell.xib */,
+			);
+			path = "List View";
+			sourceTree = "<group>";
+		};
+		20273E3B227533CD0001A884 /* Detail View */ = {
+			isa = PBXGroup;
+			children = (
+				20273E3C227533E40001A884 /* WLProductDetailContainerViewController.swift */,
+				20273E3E227624470001A884 /* WLProductDetailPageViewController.swift */,
+			);
+			path = "Detail View";
 			sourceTree = "<group>";
 		};
 		20D2CE582274ED1700CCCD17 = {
@@ -394,10 +416,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				20D2CE672274ED1700CCCD17 /* WLProductListViewController.swift in Sources */,
+				20273E3F227624470001A884 /* WLProductDetailPageViewController.swift in Sources */,
 				20273E312275047D0001A884 /* WLProductSearchViewModel.swift in Sources */,
 				20273E272274F4DD0001A884 /* WLNetworkingManager.swift in Sources */,
 				20273E33227506110001A884 /* WLExtensions.swift in Sources */,
 				20D2CE652274ED1700CCCD17 /* AppDelegate.swift in Sources */,
+				20273E3D227533E40001A884 /* WLProductDetailContainerViewController.swift in Sources */,
 				20273E252274F0CB0001A884 /* WLProduct.swift in Sources */,
 				20273E36227507F00001A884 /* WLProductTableViewCell.swift in Sources */,
 				20273E2C2274F7D90001A884 /* WLProductListViewModel.swift in Sources */,

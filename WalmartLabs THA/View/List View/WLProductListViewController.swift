@@ -8,8 +8,6 @@
 
 import UIKit
 
-
-
 class WLProductListViewController: UIViewController {
 
     @IBOutlet weak var productsTableView: UITableView!
@@ -24,7 +22,7 @@ class WLProductListViewController: UIViewController {
         productsTableView.delegate = self
         productsTableView.dataSource = self
         
-        productsTableView.registerCell(WLProductTableViewCell.self)
+        productsTableView.registerCellFromNib(WLProductTableViewCell.self)
         
         fetchProducts(refresh: true)
     }
@@ -52,7 +50,10 @@ extension WLProductListViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if let product = listViewModel.item(at: indexPath) {
-            
+            let detailVC = WLProductDetailContainerViewController.newPage(for: product)
+            detailVC.listItemNavigation = self.listViewModel
+            navigationController?.pushViewController(detailVC, animated: true)
+            tableView.deselectRow(at: indexPath, animated: true)
         }
     }
 }

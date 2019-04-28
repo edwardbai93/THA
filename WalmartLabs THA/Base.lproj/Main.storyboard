@@ -42,6 +42,44 @@
             </objects>
             <point key="canvasLocation" x="957.97101449275374" y="20.758928571428569"/>
         </scene>
+        <!--Product Detail-->
+        <scene sceneID="7bC-Pb-odX">
+            <objects>
+                <pageViewController storyboardIdentifier="product_detail_container" autoresizesArchivedViewToFullSize="NO" title="Product Detail" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="J56-RM-fOS" customClass="WLProductDetailContainerViewController" customModule="WalmartLabs_THA" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HZ9-TR-jLW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1810" y="21"/>
+        </scene>
+        <!--Product Detail Page View Controller-->
+        <scene sceneID="hBg-kp-c2a">
+            <objects>
+                <viewController storyboardIdentifier="product_detail" id="Azk-ak-u6k" customClass="WLProductDetailPageViewController" customModule="WalmartLabs_THA" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gya-sP-i4h">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UD4-ka-91O">
+                                <rect key="frame" x="186" y="437.66666666666669" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="UD4-ka-91O" firstAttribute="centerX" secondItem="gya-sP-i4h" secondAttribute="centerX" id="So8-5t-yWK"/>
+                            <constraint firstItem="UD4-ka-91O" firstAttribute="centerY" secondItem="gya-sP-i4h" secondAttribute="centerY" id="bio-St-CsX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Rbx-Pd-gWG"/>
+                    </view>
+                    <connections>
+                        <outlet property="productLabel" destination="UD4-ka-91O" id="v5v-Sh-d65"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UPL-fP-MZ6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2564" y="21"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="myt-GJ-Y4t">
             <objects>
