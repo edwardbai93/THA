@@ -16,6 +16,7 @@
 		20273E33227506110001A884 /* WLExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20273E32227506110001A884 /* WLExtensions.swift */; };
 		20273E36227507F00001A884 /* WLProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20273E34227507F00001A884 /* WLProductTableViewCell.swift */; };
 		20273E37227507F00001A884 /* WLProductTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20273E35227507F00001A884 /* WLProductTableViewCell.xib */; };
+		20273E3922752B580001A884 /* testProduct.json in Resources */ = {isa = PBXBuildFile; fileRef = 20273E3822752B580001A884 /* testProduct.json */; };
 		20D2CE652274ED1700CCCD17 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D2CE642274ED1700CCCD17 /* AppDelegate.swift */; };
 		20D2CE672274ED1700CCCD17 /* WLProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D2CE662274ED1700CCCD17 /* WLProductListViewController.swift */; };
 		20D2CE6A2274ED1700CCCD17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20D2CE682274ED1700CCCD17 /* Main.storyboard */; };
@@ -47,6 +48,7 @@
 		20273E32227506110001A884 /* WLExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLExtensions.swift; sourceTree = "<group>"; };
 		20273E34227507F00001A884 /* WLProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLProductTableViewCell.swift; sourceTree = "<group>"; };
 		20273E35227507F00001A884 /* WLProductTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WLProductTableViewCell.xib; sourceTree = "<group>"; };
+		20273E3822752B580001A884 /* testProduct.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = testProduct.json; sourceTree = "<group>"; };
 		20D2CE612274ED1700CCCD17 /* WalmartLabs THA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WalmartLabs THA.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		20D2CE642274ED1700CCCD17 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20D2CE662274ED1700CCCD17 /* WLProductListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLProductListViewController.swift; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				20273E292274F5440001A884 /* WLProductParsingTest.swift */,
+				20273E3822752B580001A884 /* testProduct.json */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -306,6 +309,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20273E3922752B580001A884 /* testProduct.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
