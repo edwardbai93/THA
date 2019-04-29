@@ -26,5 +26,15 @@ struct WLConstants {
         
         // Product Details
         static let productDetailDescriptionHeaderText = "About this item"
+        
+        // Error messages
+        static let defaultErrorTitle = "An error occurred"
+        static let defaultErrorMessage = "Please try again later"
+        static let okButtonTitle = "OK"
+        static let noMoreResultsMessage = "You've reached end of the list"
+        static let noReachabilityMessage = "Bad Internet connection!"
+        
+        // Fetching
+        static let defaultFetchingMessage = "Fetching more products..."
     }
 }

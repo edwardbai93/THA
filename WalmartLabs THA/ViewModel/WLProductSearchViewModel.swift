@@ -8,13 +8,28 @@
 
 import Foundation
 
-class WLProductSearchViewModel {
+enum WLProductSearchError: Error, CustomStringConvertible {
+    case unknown
+    case noMoreToFetch
+    case noReachability
     
-    enum WLProductSearchError: Error {
-        case fetchInProgress
-        case noMoreToFetch
+    var description: String {
+        switch self {
+        case .unknown:
+            return WLConstants.Strings.defaultErrorTitle
+        case .noMoreToFetch:
+            return WLConstants.Strings.noMoreResultsMessage
+        case .noReachability:
+            return WLConstants.Strings.noReachabilityMessage
+        }
     }
     
+    var localizedDescription: String {
+        return self.description
+    }
+}
+
+class WLProductSearchViewModel {
     private var isRequestInProgress = false
     private var currentPage = 0 // Start from 1
     private(set) var total = 0
@@ -30,8 +45,13 @@ class WLProductSearchViewModel {
     }
     
     func fetchNextPage(completion: @escaping WLProductListResultBlock) {
-        guard !isRequestInProgress, shouldFetchNextPage else {
-            
+        guard !isRequestInProgress else {
+            // Ignore the request
+            return
+        }
+        
+        guard shouldFetchNextPage else {
+            completion(WLResultType.failure(WLProductSearchError.noMoreToFetch))
             return
         }
         

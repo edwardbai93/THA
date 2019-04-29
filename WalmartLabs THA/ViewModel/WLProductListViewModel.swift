@@ -8,6 +8,9 @@
 
 import Foundation
 
+typealias WLProductSearchSuccessBlock = () -> ()
+typealias WLProductSearchFailureBlock = (Error) -> ()
+
 class WLProductListViewModel: NSObject {
     fileprivate var products = [WLProduct]()
     
@@ -15,7 +18,9 @@ class WLProductListViewModel: NSObject {
     
     let searchViewModel = WLProductSearchViewModel(provider: WLNetworkingManager())
     
-    func fetchNextPage(refresh: Bool = false, completion: @escaping (Error?) -> ()) {
+    func fetchNextPage(refresh: Bool = false,
+                       success: WLProductSearchSuccessBlock?,
+                       failure: WLProductSearchFailureBlock?) {
         searchViewModel.fetchNextPage { [unowned self] res in
             switch res {
             case .success(let value):
@@ -25,10 +30,16 @@ class WLProductListViewModel: NSObject {
                 } else {
                     self.products.append(contentsOf: fetchedProducts)
                 }
-                completion(nil)
+                
+                DispatchQueue.main.async {
+                    success?()
+                }
             case .failure(let error):
                 print(error.localizedDescription)
-                completion(error)
+                
+                DispatchQueue.main.async {
+                    failure?(error)
+                }
             }
         }
     }

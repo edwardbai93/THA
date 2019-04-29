@@ -26,8 +26,8 @@ class WLProductListResponse {
     }
 }
 
-typealias WLResultType = Alamofire.Result
-typealias WLProductListResultBlock = (WLResultType<WLProductListResponse>) -> Void
+typealias WLResultType = Alamofire.Result<WLProductListResponse>
+typealias WLProductListResultBlock = (WLResultType) -> Void
 
 protocol WLProductListDataProvider {
     func fetchProductList(pageNumber: Int,
@@ -52,9 +52,9 @@ class WLNetworkingManager: WLProductListDataProvider {
                 case .success(let value):
                     let jsonData = JSON(value)
                     let res = WLProductListResponse(json: jsonData)
-                    resultBlock(WLResultType<WLProductListResponse>.success(res))
+                    resultBlock(WLResultType.success(res))
                 case .failure(let error):
-                    resultBlock(WLResultType<WLProductListResponse>.failure(error))
+                    resultBlock(WLResultType.failure(error))
                 }
         }
     }

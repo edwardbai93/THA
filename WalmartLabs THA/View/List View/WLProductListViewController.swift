@@ -9,10 +9,8 @@
 import UIKit
 
 class WLProductListViewController: UIViewController {
-
-    @IBOutlet weak var productsTableView: UITableView!
     
-    let reuseIdentifier = "product"
+    @IBOutlet weak var productsTableView: UITableView!
     
     let listViewModel = WLProductListViewModel()
     
@@ -28,9 +26,22 @@ class WLProductListViewController: UIViewController {
     }
     
     func fetchProducts(refresh: Bool = false) {
-        listViewModel.fetchNextPage(refresh: refresh) { [unowned self] _ in
-            self.productsTableView.reloadData()
-        }
+        listViewModel.fetchNextPage(refresh: refresh,
+                                    success: { [unowned self] in
+                                        self.productsTableView.reloadData()
+                                    },
+                                    failure: { [unowned self] (error) in
+                                        self.handle(error: error)
+                                    })
+    }
+    
+    private func handle(error: Error?) {
+        let errorAlert = UIAlertController(title: WLConstants.Strings.defaultErrorTitle,
+                                           message: error?.localizedDescription ?? WLConstants.Strings.defaultErrorMessage,
+                                           preferredStyle: .alert)
+        let okAction = UIAlertAction(title: WLConstants.Strings.okButtonTitle, style: .default, handler: nil)
+        errorAlert.addAction(okAction)
+        present(errorAlert, animated: true)
     }
 }
 
@@ -41,7 +52,6 @@ extension WLProductListViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         // Prepare to load next page
-        
         let shouldLoadNextPage = listViewModel.shouldLoadNextPage(atScrollingPosition: indexPath)
         if shouldLoadNextPage {
             fetchProducts()
