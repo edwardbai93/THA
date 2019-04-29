@@ -36,8 +36,9 @@ class WLProductListViewController: UIViewController {
     }
     
     private func handle(error: Error?) {
+        let errorMessage = (error as? WLProductSearchError)?.localizedDescription ?? WLConstants.Strings.defaultErrorMessage
         let errorAlert = UIAlertController(title: WLConstants.Strings.defaultErrorTitle,
-                                           message: error?.localizedDescription ?? WLConstants.Strings.defaultErrorMessage,
+                                           message: errorMessage,
                                            preferredStyle: .alert)
         let okAction = UIAlertAction(title: WLConstants.Strings.okButtonTitle, style: .default, handler: nil)
         errorAlert.addAction(okAction)
