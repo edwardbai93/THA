@@ -66,7 +66,6 @@ extension WLProductListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let productCell: WLProductTableViewCell = tableView.dequeueReusableCell(indexPath: indexPath)
         if let product = listViewModel.item(at: indexPath) {
-            productCell.idxLabel.text = String(indexPath.row)
             productCell.render(with: product)
         }
         return productCell

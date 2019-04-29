@@ -10,8 +10,8 @@ import Foundation
 import UIKit
 
 extension UILabel {
-    func setHTMLText(_ text: String) {
-        guard let encoded = text.data(using: String.Encoding.utf8) else {
+    func setHTMLText(_ text: String?) {
+        guard let encoded = text?.data(using: String.Encoding.utf8) else {
             self.attributedText = nil
             return
         }
@@ -22,6 +22,7 @@ extension UILabel {
                                                  documentAttributes: nil)
             self.attributedText = attrStr
         } catch let error {
+            self.attributedText = nil
             print(error.localizedDescription)
         }
     }
@@ -41,4 +42,12 @@ extension UITableView {
         }
         return cell
     }
+}
+
+extension String {
+//    var matchesUnicode: String {
+//        let pattern = "[\\U00010000-\\U0010FFFF]"
+//        self.replacingOccurrences(of: pat, with: , options: , range: )
+//        return self
+//    }
 }

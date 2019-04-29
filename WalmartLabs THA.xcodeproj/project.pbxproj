@@ -19,12 +19,13 @@
 		20273E3922752B580001A884 /* testProduct.json in Resources */ = {isa = PBXBuildFile; fileRef = 20273E3822752B580001A884 /* testProduct.json */; };
 		20273E3D227533E40001A884 /* WLProductDetailContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20273E3C227533E40001A884 /* WLProductDetailContainerViewController.swift */; };
 		20273E3F227624470001A884 /* WLProductDetailPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20273E3E227624470001A884 /* WLProductDetailPageViewController.swift */; };
+		207242C0227665D8003F71AD /* WLReviewStarsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207242BF227665D8003F71AD /* WLReviewStarsView.swift */; };
+		207242C222767431003F71AD /* WLConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207242C122767431003F71AD /* WLConstants.swift */; };
 		20D2CE652274ED1700CCCD17 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D2CE642274ED1700CCCD17 /* AppDelegate.swift */; };
 		20D2CE672274ED1700CCCD17 /* WLProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D2CE662274ED1700CCCD17 /* WLProductListViewController.swift */; };
 		20D2CE6A2274ED1700CCCD17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20D2CE682274ED1700CCCD17 /* Main.storyboard */; };
 		20D2CE6C2274ED1900CCCD17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20D2CE6B2274ED1900CCCD17 /* Assets.xcassets */; };
 		20D2CE6F2274ED1900CCCD17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20D2CE6D2274ED1900CCCD17 /* LaunchScreen.storyboard */; };
-		20D2CE7A2274ED1900CCCD17 /* WalmartLabs_THATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D2CE792274ED1900CCCD17 /* WalmartLabs_THATests.swift */; };
 		8667F0CC91281D5C22CB2024 /* Pods_WalmartLabs_THATests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFC2633E8470C2045390863F /* Pods_WalmartLabs_THATests.framework */; };
 		F795BCB2A9B3A9E1BBE360FE /* Pods_WalmartLabs_THA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31644FD1DF407C61F7B48473 /* Pods_WalmartLabs_THA.framework */; };
 /* End PBXBuildFile section */
@@ -53,6 +54,8 @@
 		20273E3822752B580001A884 /* testProduct.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = testProduct.json; sourceTree = "<group>"; };
 		20273E3C227533E40001A884 /* WLProductDetailContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLProductDetailContainerViewController.swift; sourceTree = "<group>"; };
 		20273E3E227624470001A884 /* WLProductDetailPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLProductDetailPageViewController.swift; sourceTree = "<group>"; };
+		207242BF227665D8003F71AD /* WLReviewStarsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLReviewStarsView.swift; sourceTree = "<group>"; };
+		207242C122767431003F71AD /* WLConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLConstants.swift; sourceTree = "<group>"; };
 		20D2CE612274ED1700CCCD17 /* WalmartLabs THA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WalmartLabs THA.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		20D2CE642274ED1700CCCD17 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20D2CE662274ED1700CCCD17 /* WLProductListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLProductListViewController.swift; sourceTree = "<group>"; };
@@ -61,7 +64,6 @@
 		20D2CE6E2274ED1900CCCD17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		20D2CE702274ED1900CCCD17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		20D2CE752274ED1900CCCD17 /* WalmartLabs THATests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WalmartLabs THATests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		20D2CE792274ED1900CCCD17 /* WalmartLabs_THATests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalmartLabs_THATests.swift; sourceTree = "<group>"; };
 		20D2CE7B2274ED1900CCCD17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		31644FD1DF407C61F7B48473 /* Pods_WalmartLabs_THA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WalmartLabs_THA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		53A612EB9280813E4BD7188B /* Pods-WalmartLabs THA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WalmartLabs THA.debug.xcconfig"; path = "Target Support Files/Pods-WalmartLabs THA/Pods-WalmartLabs THA.debug.xcconfig"; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				20273E32227506110001A884 /* WLExtensions.swift */,
+				207242C122767431003F71AD /* WLConstants.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -117,6 +120,7 @@
 		20273E222274EFFC0001A884 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				207242BE227665C5003F71AD /* Common */,
 				20273E3B227533CD0001A884 /* Detail View */,
 				20273E3A227533BD0001A884 /* List View */,
 			);
@@ -168,6 +172,14 @@
 			path = "Detail View";
 			sourceTree = "<group>";
 		};
+		207242BE227665C5003F71AD /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				207242BF227665D8003F71AD /* WLReviewStarsView.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		20D2CE582274ED1700CCCD17 = {
 			isa = PBXGroup;
 			children = (
@@ -210,7 +222,6 @@
 			children = (
 				20273E2D2274FD910001A884 /* Utils */,
 				20273E282274F52F0001A884 /* Model */,
-				20D2CE792274ED1900CCCD17 /* WalmartLabs_THATests.swift */,
 				20D2CE7B2274ED1900CCCD17 /* Info.plist */,
 			);
 			path = "WalmartLabs THATests";
@@ -419,9 +430,11 @@
 				20273E3F227624470001A884 /* WLProductDetailPageViewController.swift in Sources */,
 				20273E312275047D0001A884 /* WLProductSearchViewModel.swift in Sources */,
 				20273E272274F4DD0001A884 /* WLNetworkingManager.swift in Sources */,
+				207242C0227665D8003F71AD /* WLReviewStarsView.swift in Sources */,
 				20273E33227506110001A884 /* WLExtensions.swift in Sources */,
 				20D2CE652274ED1700CCCD17 /* AppDelegate.swift in Sources */,
 				20273E3D227533E40001A884 /* WLProductDetailContainerViewController.swift in Sources */,
+				207242C222767431003F71AD /* WLConstants.swift in Sources */,
 				20273E252274F0CB0001A884 /* WLProduct.swift in Sources */,
 				20273E36227507F00001A884 /* WLProductTableViewCell.swift in Sources */,
 				20273E2C2274F7D90001A884 /* WLProductListViewModel.swift in Sources */,
@@ -433,7 +446,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				20273E2F2274FDAA0001A884 /* WLJSONLoader.swift in Sources */,
-				20D2CE7A2274ED1900CCCD17 /* WalmartLabs_THATests.swift in Sources */,
 				20273E2A2274F5440001A884 /* WLProductParsingTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

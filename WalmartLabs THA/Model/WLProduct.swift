@@ -29,10 +29,10 @@ public class WLProduct: NSObject {
     let productName: String
     
     /// Short HTML description string
-    let shortDescription: String
+    let shortDescription: String?
     
     /// Long HTML description string
-    let longDescription: String
+    let longDescription: String?
     
     let price: String
     let productImageUrl: URL?
@@ -43,8 +43,8 @@ public class WLProduct: NSObject {
     init(fromJSON json: JSON) {
         productId = json["productId"].stringValue
         productName = json["productName"].stringValue
-        shortDescription = json["shortDescription"].stringValue
-        longDescription = json["longDescription"].stringValue
+        shortDescription = json["shortDescription"].string
+        longDescription = json["longDescription"].string
         price = json["price"].stringValue
         
         if let imagePath = json["productImage"].string {

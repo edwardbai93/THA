@@ -13,12 +13,37 @@ class WLProductTableViewCell: UITableViewCell {
     @IBOutlet weak var productNameLabel: UILabel!
     @IBOutlet weak var productImageView: UIImageView!
     
-    @IBOutlet weak var idxLabel: UILabel!
+    @IBOutlet weak var reviewStarsView: WLReviewStarsView!
+    @IBOutlet weak var reviewStarsLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
+    @IBOutlet weak var inStockLabel: UILabel!
     
     func render(with model: WLProduct) {
-        self.productNameLabel.text = model.productName
-        self.priceLabel.text = model.price
+        productNameLabel.text = model.productName
+        priceLabel.text = model.price
         self.productImageView.sd_setImage(with: model.productImageUrl, placeholderImage: nil, options: .progressiveLoad, completed: nil)
+        
+        // Ratings
+        if model.reviewCount == 0 {
+            reviewStarsView.isHidden = true
+            reviewStarsLabel.text = WLConstants.Strings.noRatingsText
+        } else {
+            reviewStarsView.isHidden = false
+            reviewStarsView.currentRating = model.reviewRating
+            let ratingText = String(format: "%.1f", model.reviewRating)
+            reviewStarsLabel.text = ratingText
+        }
+        
+        // In stock status
+        renderInStockLabel(with: model)
+    }
+    
+    private func renderInStockLabel(with model: WLProduct) {
+        inStockLabel.text = model.inStock ?
+            WLConstants.Strings.inStockStatusText :
+            WLConstants.Strings.outOfStockStatusText
+        inStockLabel.textColor = model.inStock ?
+            WLConstants.Colors.inStockTextColor :
+            WLConstants.Colors.outOfStockTextColor
     }
 }
